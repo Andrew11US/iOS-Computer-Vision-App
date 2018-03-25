@@ -35,6 +35,7 @@ class CameraVC: UIViewController {
     @IBOutlet weak var identificationLbl: UILabel!
     @IBOutlet weak var confidenceLbl: UILabel!
     @IBOutlet weak var spinner: UIActivityIndicatorView!
+    @IBOutlet weak var labelBackground: UIView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
