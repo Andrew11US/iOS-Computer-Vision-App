@@ -55,18 +55,26 @@
                                 <state key="normal" title="Flash">
                                     <color key="titleColor" red="0.17254901959999999" green="0.20784313730000001" blue="0.27058823529999998" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="flashBtnWasPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eU6-E5-9GG"/>
+                                </connections>
                             </button>
+                            <activityIndicatorView hidden="YES" opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="O3m-Oo-AKe">
+                                <rect key="frame" x="285" y="547" width="20" height="20"/>
+                            </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="2aN-S3-gYz" secondAttribute="bottom" constant="30" id="6Rb-rl-MMl"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="yyf-ZK-I2c" secondAttribute="trailing" id="BVa-LD-buf"/>
+                            <constraint firstItem="O3m-Oo-AKe" firstAttribute="centerY" secondItem="2aN-S3-gYz" secondAttribute="centerY" id="HNv-Wk-QK8"/>
                             <constraint firstItem="2aN-S3-gYz" firstAttribute="leading" secondItem="xhT-ea-Jj0" secondAttribute="trailing" constant="150" id="KwL-De-ZbC"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="yyf-ZK-I2c" secondAttribute="bottom" id="LMR-0d-ZtJ"/>
                             <constraint firstItem="yyf-ZK-I2c" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="Opp-Zp-qYd"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="H6a-OD-7aM" secondAttribute="trailing" constant="30" id="QIJ-TR-87a"/>
                             <constraint firstItem="H6a-OD-7aM" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="30" id="Und-j0-liB"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="xhT-ea-Jj0" secondAttribute="bottom" constant="30" id="Xd8-8A-nZ6"/>
+                            <constraint firstItem="O3m-Oo-AKe" firstAttribute="centerX" secondItem="2aN-S3-gYz" secondAttribute="centerX" id="bEN-7q-VAw"/>
                             <constraint firstItem="H6a-OD-7aM" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="hr5-94-l7n"/>
                             <constraint firstItem="yyf-ZK-I2c" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="l6Y-NM-obR"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="2aN-S3-gYz" secondAttribute="trailing" constant="30" id="o85-3j-N4n"/>
@@ -80,6 +88,7 @@
                         <outlet property="confidenceLbl" destination="Xv0-7M-w7M" id="ngx-hr-hyz"/>
                         <outlet property="flashBtn" destination="xhT-ea-Jj0" id="D1T-sE-nWq"/>
                         <outlet property="identificationLbl" destination="Cek-MG-RDj" id="hqf-7V-ILJ"/>
+                        <outlet property="spinner" destination="O3m-Oo-AKe" id="4Sg-f9-JY0"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0100044B206833CE004767A7 /* SqueezeNet.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 0100044A206833CE004767A7 /* SqueezeNet.mlmodel */; };
 		0152DB472068302C005A4315 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0152DB462068302C005A4315 /* AppDelegate.swift */; };
 		0152DB492068302C005A4315 /* CameraVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0152DB482068302C005A4315 /* CameraVC.swift */; };
 		0152DB4C2068302C005A4315 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0152DB4A2068302C005A4315 /* Main.storyboard */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0100044A206833CE004767A7 /* SqueezeNet.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = SqueezeNet.mlmodel; sourceTree = "<group>"; };
 		0152DB432068302C005A4315 /* Computer Vision.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Computer Vision.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0152DB462068302C005A4315 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0152DB482068302C005A4315 /* CameraVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraVC.swift; sourceTree = "<group>"; };
@@ -91,6 +93,7 @@
 		0152DB5B206831ED005A4315 /* Core ML Model */ = {
 			isa = PBXGroup;
 			children = (
+				0100044A206833CE004767A7 /* SqueezeNet.mlmodel */,
 			);
 			name = "Core ML Model";
 			sourceTree = "<group>";
@@ -185,6 +188,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0152DB492068302C005A4315 /* CameraVC.swift in Sources */,
+				0100044B206833CE004767A7 /* SqueezeNet.mlmodel in Sources */,
 				0152DB472068302C005A4315 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
