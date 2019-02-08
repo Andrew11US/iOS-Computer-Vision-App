@@ -104,6 +104,7 @@ class CameraVC: UIViewController {
     }
     
     func resultsMethod(request: VNRequest, error: Error?) {
+        
         guard let results = request.results as? [VNClassificationObservation] else { return }
         
         for classification in results {
@@ -131,6 +132,7 @@ class CameraVC: UIViewController {
     }
     
     @IBAction func flashBtnWasPressed(_ sender: Any) {
+        
         switch flashControlState {
         case .off:
             flashBtn.setTitle("FLASH ON", for: .normal)
@@ -144,6 +146,7 @@ class CameraVC: UIViewController {
 }
 
 extension CameraVC: AVCapturePhotoCaptureDelegate {
+    
     func photoOutput(_ output: AVCapturePhotoOutput, didFinishProcessingPhoto photo: AVCapturePhoto, error: Error?) {
         if let error = error {
             debugPrint(error)
@@ -166,6 +169,7 @@ extension CameraVC: AVCapturePhotoCaptureDelegate {
 }
 
 extension CameraVC: AVSpeechSynthesizerDelegate {
+    
     func speechSynthesizer(_ synthesizer: AVSpeechSynthesizer, didFinish utterance: AVSpeechUtterance) {
         self.cameraView.isUserInteractionEnabled = true
         self.spinner.isHidden = true
